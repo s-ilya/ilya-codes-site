@@ -1,0 +1,12 @@
+---
+layout: base.njk
+title: Ilya Sarantsev blog
+---
+<ul reversed class="postlist">
+{% for post in collections.post | reverse %}
+  <li>
+    <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+  </li>
+{% endfor %}
+</ul>
