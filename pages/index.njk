@@ -1,12 +1,11 @@
 ---
 layout: base.njk
-title: Ilya Sarantsev blog
+title: Ilia Sarantsev blog
 ---
-<ul reversed class="postlist">
-{% for post in collections.post | reverse %}
-  <li>
-    <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-  </li>
-{% endfor %}
-</ul>
+<article class="page-section">
+  {% include "pages/sections/aboutme.njk" %}
+</article>
+
+<section class="page-section">
+  {% include "pages/sections/postlist.njk" %}
+</section>
