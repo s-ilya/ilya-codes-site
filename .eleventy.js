@@ -6,6 +6,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("pages/css");
   eleventyConfig.addPassthroughCopy("pages/img");
+  eleventyConfig.addPassthroughCopy("pages/cv/css");
+  eleventyConfig.addPassthroughCopy("pages/cv/img");
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {

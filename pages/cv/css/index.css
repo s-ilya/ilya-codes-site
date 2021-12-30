@@ -1,0 +1,24 @@
+.cv_main {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.cv_section {
+  margin-top: 1em;
+}
+
+.company {
+  padding-left: 1.2em;
+  overflow: visible;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1em;
+}
+
+.company-miro {
+  background-image: url("../img/miro.svg");
+}
+
+.company-wrike {
+  background-image: url("../img/wrike.svg");
+}
