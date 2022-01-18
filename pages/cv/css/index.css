@@ -1,5 +1,6 @@
 .cv_main {
-  width: 400px;
+  max-width: 800px;
+  min-width: 400px;
   margin: 0 auto;
 }
 
@@ -21,4 +22,8 @@
 
 .company-wrike {
   background-image: url("../img/wrike.svg");
+}
+
+p {
+  max-width: unset;
 }
